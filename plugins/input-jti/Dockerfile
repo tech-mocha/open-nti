@@ -1,7 +1,7 @@
 FROM fluent/fluentd:v0.12.29
 MAINTAINER Damien Garros <dgarros@gmail.com>
 
-ENV FLUENTD_JUNIPER_VERSION 0.3.0
+ENV FLUENTD_JUNIPER_VERSION 0.4.0
 
 USER root
 WORKDIR /home/fluent
@@ -32,7 +32,7 @@ RUN apk --no-cache --update add \
     gem install ruby-kafka -v 0.3.17 && \
     gem install --prerelease protobuf && \
     gem install --no-ri --no-rdoc \
-                fluent-plugin-juniper-telemetry -v ${FLUENTD_JUNIPER_VERSION} &&\
+                fluent-plugin-juniper-telemetry_tech-mocha -v ${FLUENTD_JUNIPER_VERSION} &&\
     apk del build-base ruby-dev && \
     rm -rf /tmp/* /var/tmp/* /var/cache/apk/*
 
