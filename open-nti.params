@@ -5,7 +5,7 @@ export MAIN_IMAGE_NAME=juniper/open-nti
 export MAIN_CONTAINER_NAME=opennti_con
 
 export INPUT_JTI_DIR=plugins/input-jti
-export INPUT_JTI_IMAGE_NAME=juniper/open-nti-input-jti
+export INPUT_JTI_IMAGE_NAME=techmocha/open-nti-input-jti
 export INPUT_JTI_CONTAINER_NAME=opennti_input_jti
 
 export INPUT_SYSLOG_DIR=plugins/input-syslog
