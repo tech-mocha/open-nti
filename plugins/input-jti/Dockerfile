@@ -1,7 +1,7 @@
 FROM fluent/fluentd:v0.12.29
 MAINTAINER Damien Garros <dgarros@gmail.com>
 
-ENV FLUENTD_JUNIPER_VERSION 0.4.1
+ENV FLUENTD_JUNIPER_VERSION 0.4.2
 
 USER root
 WORKDIR /home/fluent
